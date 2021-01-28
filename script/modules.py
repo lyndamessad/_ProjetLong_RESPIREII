@@ -68,7 +68,7 @@ def align_script(ident, seq_file, output_file):
     with open(output_file,"w") as f:
 
         f.write("#run alignement on the database to found templats\n")
-        f.write("hhblits -cpu 4 -i {}. -d uniclust30 -oa3m ".format(seq_file))
+        f.write("hhblits -cpu 30 -i {}. -d ~/Desktop/perso_lynda/databases/uniclust30/UniRef30_2020_06_hhsuite/UniRef30_2020_06 -oa3m ".format(seq_file))
         f.write(path_file)
         f.write("{}.a3m\n\n".format(ident))
         # -M : score POUR LA CONTRAINTE DU FORMAT FASTA 
