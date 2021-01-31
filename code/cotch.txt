@@ -1,0 +1,1 @@
+indict=tmp,outname='seq',outext='.fasta',outdir=itasser_dir
